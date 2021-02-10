@@ -1,0 +1,15 @@
+.cart-success-wrapper {
+  border-top: black solid 1px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+
+.cart-success-wrapper h2 {
+  width: 100%;
+}
+
+.item {
+  text-align: left;
+  margin-left: 25px;
+}
