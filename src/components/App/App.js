@@ -1,15 +1,23 @@
-import './App.css';
+// import './App.css';
+import { createUseStyles } from 'react-jss';
 import Alert from '../Alert/Alert';
 import CartSuccess from '../CartSuccess/CartSuccess';
 
-function App() {
-
-  const wrapper = {
+const useStyles = createUseStyles({
+  wrapper: {
     padding: 20
   }
+})
+
+function App() {
+  const classes = useStyles();
+
+  /* const wrapper = {
+    padding: 20
+  } */
 
   return (
-    <div style={wrapper} /* className='wrapper */>
+    <div className={classes.wrapper}/* style={wrapper} */ /* className='wrapper */>
       <Alert title="Items Not Added" type="error">
         <div>Your items are out of stock.</div>
       </Alert>
